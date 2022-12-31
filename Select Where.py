@@ -1,17 +1,17 @@
-##SELECT * FROM Dataset WHERE Job = 'management'
+##SELECT * FROM Dataset WHERE job = 'management'
 
 dataset[dataset.job == "management"]
 
-##SELECT Age FROM Dataset WHERE Job = 'management'
+##SELECT age FROM Dataset WHERE job = 'management'
 
 dataset[dataset.job == "management"].age
 
-##SELECT * FROM Dataset WHERE Marital_status = 'married' AND Education = 'university degree'
+##SELECT * FROM Dataset WHERE marital_status = 'married' AND education = 'university degree'
 
-dataset[(dataset.Marital_status == 'married') & (dataset.Education == 'university degree')]
+dataset[(dataset.marital_status == 'married') & (dataset.education == 'university degree')]
 
-##SELECT Age, Job FROM Dataset WHERE Marital_status = 'married' AND Education = 'university degree'
+##SELECT age, job FROM Dataset WHERE marital_status = 'married' AND education = 'university degree'
 
-dataset[(dataset.Marital_status == 'married') & (dataset.Education == 'university degree')
-        ][['Age','Job']]
+dataset[(dataset.marital_status == 'married') & (dataset.education == 'university degree')
+        ][['age','job']]
 
